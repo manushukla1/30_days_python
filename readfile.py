@@ -2,7 +2,9 @@ import csv
 
 with open(r"C:\Users\Manu\Downloads\data.csv", "r") as file:
     header = file.readline().strip().split(",")
+    print(header)
     content = file.readlines()
+    print(content)
     column_index = header.index("name")
 
     def extract_names(content):
